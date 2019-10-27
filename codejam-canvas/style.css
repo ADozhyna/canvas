@@ -95,3 +95,7 @@ ul {
   background-position: left;
   background-repeat: no-repeat;
 }
+.canvas {
+  width: 512px;
+  height: 512px;
+}
