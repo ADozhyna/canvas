@@ -1,0 +1,117 @@
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.page-header {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-icon,
+.app-bar {
+  flex-grow: 1;
+  text-align: center;
+}
+.logo {
+  flex-grow: 20;
+  font-family: Roboto, sans-serif;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul {
+  list-style: none;
+}
+.tools,
+.colors {
+  margin: 100px 0 0 30px;
+  padding: 0 60px 25px 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.tools ul li {
+  padding-top: 17px;
+  padding-left: 37px;
+  padding-bottom: 17px;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+}
+.tools ul li:nth-child(1) {
+  background-image: url(../assets/images/Vector.svg);
+}
+.tools ul li:nth-child(2) {
+  background-image: url(../assets/images/Vector1.svg);
+}
+.tools ul li:nth-child(3) {
+  background-image: url(../assets/images/Vector2.svg);
+}
+.tools ul li:nth-child(4) {
+  background-image: url(../assets/images/Vector3.svg);
+}
+.tools ul li {
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.colors ul li {
+  padding-top: 17px;
+  padding-left: 37px;
+  padding-bottom: 17px;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+}
+.colors ul li:nth-child(1) {
+  background-image: url(../assets/images/Ellipse.svg);
+}
+.colors ul li:nth-child(2) {
+  background-image: url(../assets/images/Ellipse1.svg);
+}
+.colors ul li:nth-child(3) {
+  background-image: url(../assets/images/Ellipse2.svg);
+}
+.colors ul li:nth-child(4) {
+  background-image: url(../assets/images/Ellipse3.svg);
+}
+.colors ul li {
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.canvas {
+  width: 512px;
+  height: 512px;
+  border: 1px solid grey;
+}
+.buttons {
+  width: 15%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.buttons button {
+  width: 100%;
+  padding: 15px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
+  border: none;
+  background-color: #fff;
+}
+.buttons button:nth-child(1) {
+  border-bottom: 1px solid grey;
+}
+.buttons button:nth-child(2) {
+  border-bottom: 1px solid grey;
+}
+.buttons button:hover {
+  cursor: pointer;
+}
