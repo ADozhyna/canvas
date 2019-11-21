@@ -1112,13 +1112,13 @@ let ctx = canvas.getContext("2d");
 ctx.fillStyle = "gray";
 ctx.fillRect(0, 0, 512, 512);
 
-const buttonOne = document.getElementById("first");
+const smallPattern = document.getElementById("small-size");
 
-const buttonTwo = document.getElementById("second");
+const bigPattern = document.getElementById("big-size");
 
-const buttonThree = document.getElementById("third");
+const uloadImage = document.getElementById("upload-picture");
 
-buttonOne.addEventListener("click", () => {
+smallPattern.addEventListener("click", () => {
   let width = data[0].length;
   let height = data.length;
   let scale = 128;
@@ -1134,7 +1134,7 @@ buttonOne.addEventListener("click", () => {
   }
 });
 
-buttonTwo.addEventListener("click", () => {
+bigPattern.addEventListener("click", () => {
   canvas.width = canvas.height = 32;
 
   const imgData = new ImageData(Uint8ClampedArray.from(dataValues), 32, 32);
@@ -1142,13 +1142,13 @@ buttonTwo.addEventListener("click", () => {
   ctx.putImageData(imgData, 0, 0);
 });
 
-buttonThree.addEventListener("click", () => {
+uloadImage.addEventListener("click", () => {
   canvas.width = canvas.height = 256;
   let pic = new Image();
   pic.src = "assets/images/image.png";
 
   ctx.drawImage(pic, 0, 0);
-  pic.onload = function() {
+  pic.onload = function () {
     ctx.drawImage(pic, 0, 0);
   };
 });
